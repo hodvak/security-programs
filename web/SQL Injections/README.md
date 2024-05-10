@@ -47,3 +47,13 @@ SELECT * FROM users WHERE username='bob' AND password='' OR '1'='1'
 
 this quary will fatch all the users (not just bob) because OR come after AND in SQL
 
+## How to Fix? ##
+To fix this problem you need to use the "escape charecters", for our case we need to replace the `'` with `\'` in the user input.  
+Most SQL library have a better option that make sql injecton quite impossible,  
+use the `?` will escape all chars.  
+for example in python we will do something like this:  
+
+```python
+c.execute(f"SELECT * FROM users WHERE username=? AND password=?", username, password)
+```
+
