@@ -7,7 +7,7 @@ CREATE_TABLE = '''
     DROP TABLE IF EXISTS users;
     CREATE TABLE users (username text, password text);
     INSERT INTO users (username, password) VALUES ('bob', 'bob_p');
-    INSERT INTO users (username, password) VALUES ('eve', 'eve_p');
+    INSERT INTO users (username, password) VALUES ('alice', 'alice_p');
     '''
 
 
