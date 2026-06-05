@@ -7,7 +7,7 @@ For example the next program of a message board:
 ```python
 html = '\n'.join([f'{user}: {message} </br>' for user, message  in data])  # show all message with </br> in between
 ```
-If the message will be `<h2>big hello</h1>`, the html code will render a big `big hello` text.  
+If the message will be `<h1>big hello</h1>`, the html code will render a big `big hello` text.  
 What about `<script>alert('hey');</script>`?  this will alert hey in the website.  
 
 What else can the user do?
